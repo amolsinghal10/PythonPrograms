@@ -2,7 +2,7 @@
 
 # Calculator to calculate Addition(+) Multiply(*) Subtrat(-) Devide(\) Reminder(%) Exponetial(n1 power n2)
 # User will enter 2 number - n1 and n2 -
-# and an integer equivalent to operator
+# and an integer equivalent to operation
 # Solution will be calculated 
 
 def calculator(n1, n2, opr):
@@ -19,7 +19,7 @@ def calculator(n1, n2, opr):
     if opr == '6':
         return(pow(n1, n2))
     if opr not in '123456':
-        return 'Invalid choice, please only your choice 1,2,3,4,5,6 dispalyed equivalent to operations!'
+        return 'Invalid choice, please only your choice 1,2,3,4,5,6 displayed equivalent to operations!'
         
 def main():
     n1 = int(input("Please enter first number for calculator n1="))
