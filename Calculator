@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+# Calculator to calculate Addition(+) Multiply(*) Subtrat(-) Devide(\) Reminder(%) Exponetial(n1 power n2)
+# User will enter 2 number - n1 and n2 -
+# and an integer equivalent to operator
+# Solution will be calculated 
+
+def calculator(n1, n2, opr):
+    if opr == '1':
+        return(n1 + n2)
+    if opr == '2':
+        return(n1 * n2)
+    if opr == '3':
+        return(n1 - n2)
+    if opr == '4':
+        return(n1/n2)
+    if opr == '5':
+        return(n1 % n2)
+    if opr == '6':
+        return(pow(n1, n2))
+    if opr not in '123456':
+        return 'Invalid choice, please only your choice 1,2,3,4,5,6 dispalyed equivalent to operations!'
+        
+def main():
+    n1 = int(input("Please enter first number for calculator n1="))
+    n2 = int(input("Please enter Second number for calculator n2="))
+    opr =input("\nPlease enter operation from below choices \nAddition(+)=1 \nMultiply(*)=2\nSubtrat(-)=3\nDevide(\)=4\nReminder(%)=5\nExponetial(n1 power n2)=6 \nyour choice is =")
+            
+    
+    print("\nAnswer is =", calculator(n1,n2,opr))
+if __name__ == '__main__':
+    main()
